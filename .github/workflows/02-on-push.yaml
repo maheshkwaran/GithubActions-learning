@@ -1,6 +1,6 @@
 name : on-push-workflow
 
-on : on-push
+on : push
 
 jobs:
   onpush:
