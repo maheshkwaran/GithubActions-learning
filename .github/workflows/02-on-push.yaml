@@ -1,0 +1,14 @@
+name : on-push-workflow
+
+on : on-push
+
+jobs:
+  onpush:
+    runs-on : ubuntu-latest
+
+    steps:
+      - name : Show What Triggered this run
+        run : |
+          echo " Event Name : $GITHUB_EVENT_NAME"
+          echo "Event ref : $GITHUB_REF"
+          echo "Event Actor : $GITHUB_ACTOR"
